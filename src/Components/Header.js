@@ -29,7 +29,7 @@ export default function Header(props) {
 }
 
 Header.defaultProps = {
-    title: "Your title Here"
+    title: "MyTodo"
 }
 
 Header.propTypes = {
