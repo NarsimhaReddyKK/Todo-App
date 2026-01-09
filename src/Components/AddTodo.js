@@ -7,8 +7,11 @@ export const AddTodo = ({addtodo}) => {
         e.preventDefault();
         if(!title||!desc){
             alert("Title or Description is not defined")
+            return;
         }
         addtodo(title, desc)
+        setTitle("");
+        setDesc("");
     }
     return (
         <div className='add-todo-section'>
