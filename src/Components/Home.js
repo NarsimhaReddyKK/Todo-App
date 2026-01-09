@@ -21,10 +21,12 @@ export const Home = () => {
         console.log([...todos])
     }
     return (
-        <div>
-            <Header SearchBar={true} />
-            <AddTodo addtodo={addtodo} />
-            <Todos todos={todos} onDelete={onDelete} />
+        <div className="app-container">
+            <Header SearchBar={true} title="My Todo App" />
+            <div className="main-content">
+                <AddTodo addtodo={addtodo} />
+                <Todos todos={todos} onDelete={onDelete} />
+            </div>
             <Footer />
         </div>
     )
